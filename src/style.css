@@ -223,6 +223,160 @@ html.lenis, html.lenis body { height: auto; }
 }
 
 
+/* ── Floating AI Logos ── */
+
+.floating-logos-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-logo {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1.15rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  opacity: 0.75;
+  z-index: 2;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  will-change: transform;
+}
+
+.floating-logo .logo-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* Positions across the section */
+.float-openai {
+  top: 14%;
+  left: 10%;
+  animation: floatDrift1 8s ease-in-out infinite alternate;
+}
+
+.float-google {
+  top: 18%;
+  right: 12%;
+  animation: floatDrift2 9.5s ease-in-out infinite alternate-reverse;
+}
+
+.float-anthropic {
+  bottom: 18%;
+  left: 12%;
+  animation: floatDrift3 8.8s ease-in-out infinite alternate;
+}
+
+.float-xai {
+  bottom: 14%;
+  right: 10%;
+  animation: floatDrift4 7.2s ease-in-out infinite alternate-reverse;
+}
+
+/* Organic Floating Animations */
+@keyframes floatDrift1 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(14px, -18px) rotate(2.5deg);
+  }
+  66% {
+    transform: translate(-10px, -8px) rotate(-1.5deg);
+  }
+  100% {
+    transform: translate(8px, 16px) rotate(1.8deg);
+  }
+}
+
+@keyframes floatDrift2 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(-16px, 14px) rotate(-2deg);
+  }
+  66% {
+    transform: translate(12px, -12px) rotate(2.2deg);
+  }
+  100% {
+    transform: translate(-8px, -18px) rotate(-1.2deg);
+  }
+}
+
+@keyframes floatDrift3 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(16px, 14px) rotate(2deg);
+  }
+  66% {
+    transform: translate(-12px, 18px) rotate(-2.5deg);
+  }
+  100% {
+    transform: translate(10px, -14px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatDrift4 {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(-15px, -16px) rotate(-2.8deg);
+  }
+  66% {
+    transform: translate(14px, 12px) rotate(1.8deg);
+  }
+  100% {
+    transform: translate(-10px, 14px) rotate(-1deg);
+  }
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .float-openai {
+    top: 6%;
+    left: 5%;
+  }
+  .float-google {
+    top: 7%;
+    right: 5%;
+  }
+  .float-anthropic {
+    bottom: 6%;
+    left: 5%;
+  }
+  .float-xai {
+    bottom: 7%;
+    right: 5%;
+  }
+  .floating-logo {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.72rem;
+    gap: 0.45rem;
+    opacity: 0.65;
+  }
+  .floating-logo .logo-icon {
+    width: 0.95rem;
+    height: 0.95rem;
+  }
+}
+
+
 /* ── References ── */
 
 .references-section {
