@@ -1,173 +1,270 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --noir: #0c0d10;
-    --surface: #14161b;
-    --surface-hover: #1b1e25;
-    --border: rgba(255, 255, 255, 0.08);
-    --border-strong: rgba(255, 255, 255, 0.16);
-    --ivory: #f6f5f1;
-    --sand: #d8cca3;
-    --muted: #9598a3;
-    --crimson: #e84734;
-    --crimson-hover: #d23b29;
-    --amber: #dfa038;
-    --emerald: #2bb673;
-  }
+/* ── Reset & Base ── */
 
-  html {
-    scroll-behavior: initial; /* Lenis handles smooth scrolling */
-    background-color: var(--noir);
-    color: var(--ivory);
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  }
-
-  body {
-    overflow-x: hidden;
-    position: relative;
-    background-color: var(--noir);
-    color: var(--ivory);
-  }
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Typography Utilities */
-.font-serif {
-  font-family: 'Newsreader', Georgia, Cambria, serif;
+:root {
+  --dark: #0d0d0d;
+  --cream: #f2efe6;
+  --slate: #1c2028;
+  --crimson: #d63a2e;
+  --cream-text: #2a2a28;
+  --muted: #888;
 }
 
-.font-sans {
+html {
+  scroll-behavior: initial; /* Lenis takes over */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--dark);
+  color: #fff;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
 }
 
-.font-mono {
-  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+::selection {
+  background: var(--crimson);
+  color: #fff;
 }
 
-/* Color Palette Helper Classes */
-.bg-noir { background-color: var(--noir); }
-.bg-surface { background-color: var(--surface); }
-.text-ivory { color: var(--ivory); }
-.text-sand { color: var(--sand); }
-.text-muted { color: var(--muted); }
-.text-crimson { color: var(--crimson); }
-.text-amber { color: var(--amber); }
-.text-emerald { color: var(--emerald); }
-.border-border { border-color: var(--border); }
-.border-crimson { border-color: var(--crimson); }
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
 
-/* Film Grain Texture for Authentic Human / Print Broadside Feel */
-.film-grain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 99;
-  opacity: 0.028;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
 
-/* Minimalist Button Styles */
-.btn-primary {
-  display: inline-flex;
+/* ── Panels (each section) ── */
+
+.panel {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
   align-items: center;
-  background-color: var(--crimson);
-  color: #ffffff;
-  padding: 0.65rem 1.25rem;
-  border-radius: 9999px;
-  font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px 0 rgba(232, 71, 52, 0.25);
-}
-
-.btn-primary:hover {
-  background-color: var(--crimson-hover);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px 0 rgba(232, 71, 52, 0.35);
-}
-
-.btn-primary:active {
-  transform: translateY(0);
-}
-
-.btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  background-color: transparent;
-  color: var(--ivory);
-  padding: 0.65rem 1.25rem;
-  border-radius: 9999px;
-  font-weight: 500;
-  border: 1px solid var(--border-strong);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-secondary:hover {
-  background-color: var(--surface);
-  border-color: var(--ivory);
-  transform: translateY(-1px);
-}
-
-/* Perspective Interactive Tab Buttons */
-.perspective-btn {
-  background-color: var(--surface);
-  transition: all 0.25s ease;
+  justify-content: center;
+  padding: 4rem 2rem;
   position: relative;
-  cursor: pointer;
 }
 
-.perspective-btn:hover {
-  background-color: var(--surface-hover);
-  border-color: var(--border-strong);
+/* Colour themes */
+.panel.dark {
+  background: var(--dark);
+  color: #f0ede4;
 }
 
-.perspective-btn.active {
-  background-color: var(--surface-hover);
-  border-color: var(--crimson);
-  box-shadow: 0 0 0 1px var(--crimson);
+.panel.cream {
+  background: var(--cream);
+  color: var(--cream-text);
 }
 
-.perspective-btn.active::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 15%;
-  bottom: 15%;
-  width: 3px;
-  background-color: var(--crimson);
-  border-radius: 0 4px 4px 0;
+.panel.slate {
+  background: var(--slate);
+  color: #ddd;
 }
 
-/* Stat Cards */
-.stat-card {
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+.panel.crimson {
+  background: var(--crimson);
+  color: #fff;
 }
 
-.stat-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-strong);
+
+/* ── Content container ── */
+
+.content {
+  max-width: 60rem;
+  width: 100%;
+  text-align: center;
 }
 
-/* Lenis Recommended CSS for Smooth Scroll */
-html.lenis, html.lenis body {
-  height: auto;
+.content.narrow {
+  max-width: 38rem;
+  text-align: left;
 }
 
-.lenis.lenis-smooth {
-  scroll-behavior: auto !important;
+
+/* ── Typography ── */
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 2rem;
+  font-weight: 400;
 }
 
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
+.hero-title {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(3.5rem, 10vw, 9rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
 }
 
-.lenis.lenis-stopped {
-  overflow: hidden;
+.big-quote {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2.8rem, 8vw, 7rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
+.medium-heading {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.body-text {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  line-height: 1.75;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.body-text strong {
+  font-weight: 600;
+  opacity: 1;
+}
+
+.stat-number {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.stat-caption {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  line-height: 1.65;
+  font-weight: 300;
+  opacity: 0.85;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.stat-source {
+  opacity: 0.65;
+  font-size: 0.9em;
+}
+
+.source-line {
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.35;
+  font-weight: 400;
+}
+
+
+/* ── Action Links ── */
+
+.links-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.action-link {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.action-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* ── References ── */
+
+.references-section {
+  min-height: auto;
+  padding: 5rem 2rem;
+}
+
+.reference-list {
+  list-style: decimal;
+  padding-left: 1.25rem;
+  font-size: 0.8rem;
+  line-height: 1.8;
+  opacity: 0.65;
+  font-weight: 300;
+}
+
+.reference-list em {
+  font-style: italic;
+}
+
+
+/* ── Footer ── */
+
+.footer-panel {
+  min-height: auto;
+  padding: 4rem 2rem;
+}
+
+.footer-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+
+.footer-sub {
+  font-family: 'Newsreader', Georgia, serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  opacity: 0.3;
+}
+
+
+/* ── Scroll-triggered fade-in ── */
+
+.panel .content {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.panel .content.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

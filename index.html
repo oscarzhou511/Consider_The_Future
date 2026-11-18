@@ -1,870 +1,224 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Consider the Future | A Youth Advocacy Campaign by Oscar Zhou</title>
+  <title>Consider the Future | Oscar Zhou</title>
   
-  <!-- SEO & Social Meta Tags -->
-  <meta name="description" content="A youth-led global advocacy campaign by Oscar Zhou demanding human safety, democratic accountability, and ethical limits on the unconstrained development of Artificial Intelligence." />
+  <meta name="description" content="A youth-led advocacy campaign demanding responsible AI development. Founded by Oscar Zhou." />
   <meta name="author" content="Oscar Zhou" />
   <meta property="og:title" content="Consider the Future | Our future isn't yours to risk." />
-  <meta property="og:description" content="Investigating the existential, ecological, and human health impacts of the unchecked AI race. Founded by Oscar Zhou." />
   <meta property="og:type" content="website" />
   
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230f1012' stroke='%23e84734' stroke-width='6'/><circle cx='50' cy='50' r='18' fill='%23e84734'/></svg>" />
 
-  <!-- Google Fonts: Newsreader (Editorial Serif), Plus Jakarta Sans (Humanist Sans), JetBrains Mono (Journalistic Monospace) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./src/style.css" />
 </head>
-<body class="bg-noir text-ivory antialiased selection:bg-crimson selection:text-white">
-
-  <!-- Grain Overlay for Film / Broadsheet Documentary Texture -->
-  <div class="film-grain" aria-hidden="true"></div>
-
-  <!-- Reading Progress Bar -->
-  <div id="scroll-progress" class="fixed top-0 left-0 h-[2px] bg-crimson z-50 transition-all duration-75"></div>
-
-  <!-- Global Header / Navigation -->
-  <header class="fixed top-0 left-0 w-full z-40 backdrop-blur-md bg-noir/80 border-b border-border/40 transition-all duration-300" id="navbar">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      
-      <!-- Brand & Founder Badge -->
-      <a href="#hero" class="group flex items-center gap-3">
-        <span class="w-3 h-3 rounded-full bg-crimson animate-pulse" aria-hidden="true"></span>
-        <div class="flex flex-col">
-          <span class="font-serif text-lg tracking-tight font-medium text-ivory group-hover:text-crimson transition-colors">
-            CONSIDER THE FUTURE
-          </span>
-          <span class="font-mono text-[10px] tracking-widest text-sand uppercase">
-            Campaign by Oscar Zhou
-          </span>
-        </div>
-      </a>
-
-      <!-- Desktop Navigation Links -->
-      <nav class="hidden md:flex items-center gap-8 font-sans text-xs tracking-wider uppercase text-muted">
-        <a href="#manifesto" class="hover:text-ivory transition-colors">01 / Manifesto</a>
-        <a href="#evidence" class="hover:text-ivory transition-colors">02 / The Toll</a>
-        <a href="#perspectives" class="hover:text-ivory transition-colors">03 / Perspectives</a>
-        <a href="#solutions" class="hover:text-ivory transition-colors">04 / Action</a>
-        <a href="#sources" class="hover:text-ivory transition-colors">05 / Sources</a>
-      </nav>
-
-      <!-- CTA Button -->
-      <div class="flex items-center gap-4">
-        <a href="#take-action" class="btn-primary text-xs uppercase tracking-wider font-mono">
-          Take Action
-          <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 inline-block ml-1"></i>
-        </a>
-      </div>
-    </div>
-  </header>
+<body>
 
   <main>
-    <!-- HERO SECTION -->
-    <section id="hero" class="relative min-h-screen flex flex-col justify-center pt-28 pb-20 overflow-hidden border-b border-border/40">
-      
-      <!-- Background Parallax Typographic Watermark -->
-      <div class="absolute inset-0 pointer-events-none select-none overflow-hidden flex items-center justify-center opacity-[0.035] parallax-bg" data-speed="0.2">
-        <span class="font-serif text-[18vw] leading-none whitespace-nowrap text-ivory font-light uppercase tracking-tighter">
-          CONSIDER THE FUTURE
-        </span>
+
+    <!-- 1. HERO -->
+    <section class="panel dark">
+      <div class="content">
+        <p class="label">A campaign by Oscar Zhou</p>
+        <h1 class="hero-title">Consider<br>the Future.</h1>
       </div>
+    </section>
 
-      <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
-        <!-- Live Dispatch Pill -->
-        <div class="inline-flex items-center gap-3 py-1.5 px-3.5 rounded-full bg-surface border border-border/80 mb-8 backdrop-blur-sm">
-          <span class="flex h-2 w-2 relative">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-crimson opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-crimson"></span>
-          </span>
-          <span class="font-mono text-[11px] uppercase tracking-wider text-sand">
-            Global Youth Advocacy Dispatch • Unaligned AI & World Health
-          </span>
-        </div>
+    <!-- 2. SLOGAN -->
+    <section class="panel cream">
+      <div class="content">
+        <h2 class="big-quote">Our future<br>isn't yours<br>to risk.</h2>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-          <!-- Main Hero Title & Slogan -->
-          <div class="lg:col-span-8">
-            <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal leading-[1.05] tracking-tight text-ivory mb-6">
-              Our future <br />
-              <span class="italic font-light text-sand">isn’t yours</span> <br />
-              to risk.
-            </h1>
-            <p class="font-sans text-lg sm:text-xl text-muted max-w-2xl font-light leading-relaxed">
-              Trillion-dollar labs are accelerating unconstrained intelligence for quarterly profits and sovereign dominance. We are the generation that will live with the fallout.
-            </p>
-          </div>
+    <!-- 3. THE PROBLEM -->
+    <section class="panel dark">
+      <div class="content narrow">
+        <p class="body-text">
+          Trillion-dollar labs are racing to build the most powerful technology in human history. They are chasing profit and near-term gains instead of considering the longer-term impacts of rushed development and potential catastrophic misalignment with human values.
+        </p>
+      </div>
+    </section>
 
-          <!-- Campaign Founder Note & Quick Metrics -->
-          <div class="lg:col-span-4 flex flex-col gap-6 lg:border-l lg:border-border/60 lg:pl-8">
-            <div class="p-6 bg-surface/60 rounded-xl border border-border/60 backdrop-blur-sm">
-              <div class="flex items-center gap-3 mb-3">
-                <div class="w-8 h-8 rounded-full bg-crimson/20 border border-crimson/40 flex items-center justify-center text-crimson font-serif text-sm">
-                  OZ
-                </div>
-                <div>
-                  <h4 class="font-sans font-medium text-sm text-ivory">Oscar Zhou</h4>
-                  <p class="font-mono text-[11px] text-muted">Youth Advocate & Campaigner</p>
-                </div>
-              </div>
-              <p class="font-serif text-sm text-sand/90 italic leading-snug">
-                “If we do not demand human guardrails now, humanity will face an existential and ecological reality faster than we can adapt.”
-              </p>
-            </div>
+    <!-- 4. STAT — ELECTRICITY -->
+    <section class="panel crimson">
+      <div class="content">
+        <p class="stat-number"><span class="counter" data-target="945">0</span> TWh</p>
+        <p class="stat-caption">
+          Projected electricity consumed by AI data centres by 2030.<br>
+          <span class="stat-source">More than the entire national power demand of Japan.</span>
+        </p>
+        <p class="source-line">International Energy Agency, 2024</p>
+      </div>
+    </section>
 
-            <div class="grid grid-cols-2 gap-4">
-              <div class="p-4 rounded-lg bg-surface/30 border border-border/40">
-                <span class="font-mono text-2xl font-semibold text-ivory block">945<span class="text-crimson text-sm ml-1">TWh</span></span>
-                <span class="font-mono text-[10px] tracking-wider text-muted uppercase">2030 Data Center Grid Load</span>
-              </div>
-              <div class="p-4 rounded-lg bg-surface/30 border border-border/40">
-                <span class="font-mono text-2xl font-semibold text-ivory block">+55<span class="text-crimson text-sm ml-1">%</span></span>
-                <span class="font-mono text-[10px] tracking-wider text-muted uppercase">AI Harm Incidents (2025)</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- 5. STAT — INCIDENTS -->
+    <section class="panel dark">
+      <div class="content">
+        <p class="stat-number"><span class="counter" data-target="362">0</span></p>
+        <p class="stat-caption">
+          Documented AI-related incidents in 2025 alone.<br>
+          <span class="stat-source">Up 55% from 233 in 2024. Cases where AI systems caused or contributed to harm.</span>
+        </p>
+        <p class="source-line">Stanford University AI Index Report, 2026</p>
+      </div>
+    </section>
 
-        <!-- Scroll Anchor -->
-        <div class="mt-16 pt-8 border-t border-border/40 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-muted">
-          <div class="flex items-center gap-2">
-            <i data-lucide="compass" class="w-4 h-4 text-sand"></i>
-            <span>SDG 3 • SDG 9 • SDG 13 • SDG 16</span>
-          </div>
-          <a href="#manifesto" class="flex items-center gap-2 hover:text-ivory transition-colors group">
-            <span>EXPLORE THE INQUIRY</span>
-            <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+    <!-- 6. STAT — TIMELINE -->
+    <section class="panel slate">
+      <div class="content">
+        <p class="stat-number">Mid-2030</p>
+        <p class="stat-caption">
+          Researchers warn that unconstrained AI development without safety guarantees could risk civilisational tipping points within years — not decades.
+        </p>
+        <p class="source-line">AI 2027, Frontier Research Paper</p>
+      </div>
+    </section>
+
+    <!-- 7. WHO IS AFFECTED -->
+    <section class="panel cream">
+      <div class="content narrow">
+        <p class="section-label">Who pays the price?</p>
+        <p class="body-text">
+          Communities living near data centres face depleted water supplies, rising electricity bills, and constant industrial noise. Young graduates face career uncertainty as entire fields are automated overnight. Rural towns subsidise infrastructure they never asked for.
+        </p>
+      </div>
+    </section>
+
+    <!-- 8. QUOTE — LOBBYING -->
+    <section class="panel dark">
+      <div class="content narrow">
+        <p class="body-text">
+          Frontier tech companies spent record millions on lobbying. In December 2025, an executive order stripped individual US states of the power to regulate AI — centralising control and silencing local democratic oversight.
+        </p>
+        <p class="source-line" style="margin-top: 2rem;">The White House, 2025 &nbsp;·&nbsp; CNBC, 2026</p>
+      </div>
+    </section>
+
+    <!-- 9. SDGs -->
+    <section class="panel crimson">
+      <div class="content">
+        <p class="stat-number">4 SDGs</p>
+        <p class="stat-caption">
+          Good Health &amp; Well-being&ensp;·&ensp;Industry &amp; Infrastructure<br>
+          Climate Action&ensp;·&ensp;Peace, Justice &amp; Strong Institutions
+        </p>
+        <p class="source-line">United Nations Sustainable Development Goals 3, 9, 13, 16</p>
+      </div>
+    </section>
+
+    <!-- 10. WHAT CAN YOU DO — PERSONAL -->
+    <section class="panel cream">
+      <div class="content narrow">
+        <p class="section-label">What you can do</p>
+        <h2 class="medium-heading">Talk about it.</h2>
+        <p class="body-text">
+          Most people have a superficial understanding of artificial intelligence and do not understand the existential and environmental threats its development brings. Start the conversation at school, at home, at work. Change cannot happen without people caring about an issue.
+        </p>
+      </div>
+    </section>
+
+    <!-- 11. WHAT CAN YOU DO — COMMUNITY -->
+    <section class="panel dark">
+      <div class="content narrow">
+        <h2 class="medium-heading">Vote for it.</h2>
+        <p class="body-text">
+          Voice your concerns to local politicians. Make informed decisions at elections. Support candidates who will put human safety ahead of corporate donations. Politicians have the power to apply direct pressure to AI companies and issue real legislation.
+        </p>
+      </div>
+    </section>
+
+    <!-- 12. WHAT CAN YOU DO — GLOBAL -->
+    <section class="panel slate">
+      <div class="content narrow">
+        <h2 class="medium-heading">Demand accountability.</h2>
+        <p class="body-text">
+          We need a global, independent organisation — like those governing nuclear technology — to audit AI progress, advise governments, and hold nations accountable. Mandatory safety audits before deployment. Protection for whistleblowers. No more self-regulation.
+        </p>
+      </div>
+    </section>
+
+    <!-- 13. CASE STUDY -->
+    <section class="panel cream">
+      <div class="content narrow">
+        <p class="section-label">People already fighting for this</p>
+        <p class="body-text">
+          Advocacy groups like <strong>Siliconversations</strong> are pioneering a new model for technology campaigning — using sharp humour and accessible media to mobilise public attention. Working alongside watchdogs like <strong>ControlAI</strong> and the <strong>Future of Life Institute</strong>, they back viral reach with rigorous research.
+        </p>
+        <p class="body-text" style="margin-top: 1.5rem;">
+          Their lesson is clear: when ordinary citizens understand the stakes, political representatives can no longer quietly prioritise corporate donations.
+        </p>
+      </div>
+    </section>
+
+    <!-- 14. TAKE ACTION — PETITION LINKS -->
+    <section class="panel crimson">
+      <div class="content">
+        <h2 class="medium-heading" style="color: #fff;">Add your voice.</h2>
+        <p class="stat-caption" style="margin-bottom: 3rem;">Sign the petitions. Share the message. Hold them accountable.</p>
+        
+        <div class="links-stack">
+          <a href="https://www.youtube.com/@Siliconversations" target="_blank" rel="noopener" class="action-link">
+            Siliconversations — YouTube Campaign&ensp;↗
+          </a>
+          <a href="https://controlai.org/" target="_blank" rel="noopener" class="action-link">
+            ControlAI — Demand Human Control Over AI&ensp;↗
+          </a>
+          <a href="https://futureoflife.org/" target="_blank" rel="noopener" class="action-link">
+            Future of Life Institute — Existential Risk Research&ensp;↗
+          </a>
+          <a href="https://safe.ai/" target="_blank" rel="noopener" class="action-link">
+            Center for AI Safety — Statement on AI Risk&ensp;↗
+          </a>
+          <a href="https://aiforgood.itu.int/" target="_blank" rel="noopener" class="action-link">
+            AI for Good — United Nations Platform&ensp;↗
           </a>
         </div>
       </div>
     </section>
 
-    <!-- SECTION 1: THE CORE QUESTION & MANIFESTO -->
-    <section id="manifesto" class="py-28 border-b border-border/40 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-16 gap-4">
-          <div>
-            <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">01 / The Core Dilemma</span>
-            <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory">A World at the Crossroads</h2>
-          </div>
-          <p class="font-mono text-xs text-muted max-w-xs">
-            How young people can use evidence-based advocacy to alter the trajectory of human technology.
-          </p>
-        </div>
-
-        <!-- Editorial Spotlight Quote -->
-        <div class="my-12 p-8 sm:p-14 rounded-2xl bg-gradient-to-br from-surface to-surface/20 border border-border/80 relative overflow-hidden">
-          <div class="absolute -top-12 -right-12 font-serif text-[14rem] text-border/20 pointer-events-none select-none">“</div>
-          
-          <p class="font-serif text-2xl sm:text-3xl md:text-4xl text-ivory font-light leading-relaxed mb-8 relative z-10">
-            “Major research institutions and labs are chasing profit and near-term gains instead of considering the longer-term impacts associated with rushed development and potential catastrophic misalignment.”
-          </p>
-          
-          <div class="flex flex-wrap items-center justify-between gap-6 border-t border-border/60 pt-6 relative z-10 font-mono text-xs">
-            <span class="text-sand uppercase tracking-wider">From the Campaign Manifesto — Oscar Zhou</span>
-            <span class="text-muted">Targeting Youth, Corporate Executives & Sovereign Leaders</span>
-          </div>
-        </div>
-
-        <!-- The Three Structural Faultlines -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          <!-- Pillar 1 -->
-          <div class="p-8 rounded-xl bg-surface/30 border border-border/60 hover:border-crimson/50 transition-colors flex flex-col justify-between group">
-            <div>
-              <div class="w-10 h-10 rounded-lg bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson mb-6">
-                <i data-lucide="shield-alert" class="w-5 h-5"></i>
-              </div>
-              <span class="font-mono text-[11px] text-muted tracking-widest uppercase block mb-2">Faultline 01</span>
-              <h3 class="font-serif text-2xl text-ivory font-normal mb-4">Catastrophic Misalignment</h3>
-              <p class="font-sans text-sm text-muted leading-relaxed font-light">
-                In unvetted race dynamics, models optimize for reward functions divergent from human survival. As researchers note, when AI systems outpace our ability to interpret and contain their decision architectures, alignment becomes an irreversible existential gamble.
-              </p>
-            </div>
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[11px] text-sand flex items-center justify-between">
-              <span>Threat Level: Existential</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
-          <!-- Pillar 2 -->
-          <div class="p-8 rounded-xl bg-surface/30 border border-border/60 hover:border-crimson/50 transition-colors flex flex-col justify-between group">
-            <div>
-              <div class="w-10 h-10 rounded-lg bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson mb-6">
-                <i data-lucide="zap" class="w-5 h-5"></i>
-              </div>
-              <span class="font-mono text-[11px] text-muted tracking-widest uppercase block mb-2">Faultline 02</span>
-              <h3 class="font-serif text-2xl text-ivory font-normal mb-4">The Ecological Drain</h3>
-              <p class="font-sans text-sm text-muted leading-relaxed font-light">
-                AI is treated as ethereal software, but its physical footprint is massive. Hyperscale compute clusters consume gigawatts of power, billions of liters of potable cooling water, and generate deafening industrial noise in surrounding residential communities.
-              </p>
-            </div>
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[11px] text-sand flex items-center justify-between">
-              <span>Impact: Climate & Local Health</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-
-          <!-- Pillar 3 -->
-          <div class="p-8 rounded-xl bg-surface/30 border border-border/60 hover:border-crimson/50 transition-colors flex flex-col justify-between group">
-            <div>
-              <div class="w-10 h-10 rounded-lg bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson mb-6">
-                <i data-lucide="scale" class="w-5 h-5"></i>
-              </div>
-              <span class="font-mono text-[11px] text-muted tracking-widest uppercase block mb-2">Faultline 03</span>
-              <h3 class="font-serif text-2xl text-ivory font-normal mb-4">Centralized Oligopoly</h3>
-              <p class="font-sans text-sm text-muted leading-relaxed font-light">
-                A tiny handful of private conglomerates and sovereign intelligence apparatuses control the world’s frontier compute. By aggressively spending tens of millions in lobbying, they preempt state protections and suppress democratic oversight.
-              </p>
-            </div>
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[11px] text-sand flex items-center justify-between">
-              <span>Impact: Democratic Sovereignty</span>
-              <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></i>
-            </div>
-          </div>
-        </div>
-
+    <!-- 15. CLOSING STATEMENT -->
+    <section class="panel dark">
+      <div class="content">
+        <h2 class="big-quote">Consider<br>the future.</h2>
+        <p class="body-text" style="margin-top: 2rem; text-align: center; max-width: 32rem;">
+          If we do not demand human guardrails now, humanity will face an existential and ecological reality faster than we can adapt.
+        </p>
       </div>
     </section>
 
-    <!-- SECTION 2: THE PHYSICAL & HUMAN TOLL (PARALLAX STATISTICS LEDGER) -->
-    <section id="evidence" class="py-28 border-b border-border/40 bg-surface/20 relative overflow-hidden">
-      
-      <!-- Subtle Parallax Graphic Layer -->
-      <div class="absolute right-0 top-1/4 w-96 h-96 bg-crimson/5 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="max-w-7xl mx-auto px-6 relative z-10">
-        
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div>
-            <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">02 / The Evidence Ledger</span>
-            <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory">The Physical Reality</h2>
-          </div>
-          <p class="font-sans text-sm text-muted max-w-md font-light">
-            Behind the speculative marketing lies verifiable, documented data on resource depletion, systemic failures, and accelerating civilizational risks.
-          </p>
-        </div>
-
-        <!-- Parallax Big Data Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16" id="stats-counter-container">
-          
-          <!-- Stat 1: Electricity -->
-          <div class="p-8 rounded-xl bg-surface border border-border/80 flex flex-col justify-between stat-card">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-[10px] uppercase tracking-wider text-muted">IEA Projection</span>
-                <i data-lucide="zap" class="w-4 h-4 text-amber"></i>
-              </div>
-              <div class="font-mono text-5xl font-bold text-ivory mb-2 flex items-baseline">
-                <span class="counter" data-target="945">0</span>
-                <span class="text-crimson text-2xl ml-1">TWh</span>
-              </div>
-              <h4 class="font-serif text-lg text-ivory mb-2">Grid Electricity by 2030</h4>
-              <p class="font-sans text-xs text-muted leading-relaxed font-light">
-                Projected electricity consumption of AI data centers globally according to the International Energy Agency (IEA). Exceeding the total national power demand of Japan.
-              </p>
-            </div>
-            <div class="mt-6 pt-3 border-t border-border/40 font-mono text-[10px] text-sand">
-              Source: IEA Electricity 2024–2030
-            </div>
-          </div>
-
-          <!-- Stat 2: AI Incident Database -->
-          <div class="p-8 rounded-xl bg-surface border border-border/80 flex flex-col justify-between stat-card">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-[10px] uppercase tracking-wider text-muted">Stanford AI Index</span>
-                <i data-lucide="alert-triangle" class="w-4 h-4 text-crimson"></i>
-              </div>
-              <div class="font-mono text-5xl font-bold text-ivory mb-2 flex items-baseline">
-                <span class="counter" data-target="362">0</span>
-                <span class="text-sand text-2xl ml-1">Incidents</span>
-              </div>
-              <h4 class="font-serif text-lg text-ivory mb-2">Verified AI Harms in 2025</h4>
-              <p class="font-sans text-xs text-muted leading-relaxed font-light">
-                Documented cases where deployed AI systems directly caused harm to humans or critical public infrastructure, up 55% from 233 incidents in 2024.
-              </p>
-            </div>
-            <div class="mt-6 pt-3 border-t border-border/40 font-mono text-[10px] text-sand">
-              Source: Stanford AI Incident DB (2026)
-            </div>
-          </div>
-
-          <!-- Stat 3: Horizon -->
-          <div class="p-8 rounded-xl bg-surface border border-border/80 flex flex-col justify-between stat-card">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-[10px] uppercase tracking-wider text-muted">Horizon Estimate</span>
-                <i data-lucide="hourglass" class="w-4 h-4 text-sand"></i>
-              </div>
-              <div class="font-mono text-5xl font-bold text-ivory mb-2 flex items-baseline">
-                <span>Mid-</span><span class="counter" data-target="2030">2026</span>
-              </div>
-              <h4 class="font-serif text-lg text-ivory mb-2">Existential Risk Threshold</h4>
-              <p class="font-sans text-xs text-muted leading-relaxed font-light">
-                Leading researchers in the landmark <em>‘AI 2027’</em> analysis warn that unconstrained recursive capability gains without verifiable safety guarantees risk civilizational tipping points.
-              </p>
-            </div>
-            <div class="mt-6 pt-3 border-t border-border/40 font-mono text-[10px] text-sand">
-              Source: AI 2027 Frontier Research Paper
-            </div>
-          </div>
-
-          <!-- Stat 4: SDGs -->
-          <div class="p-8 rounded-xl bg-surface border border-border/80 flex flex-col justify-between stat-card">
-            <div>
-              <div class="flex items-center justify-between mb-4">
-                <span class="font-mono text-[10px] uppercase tracking-wider text-muted">UN SDG Nexus</span>
-                <i data-lucide="globe" class="w-4 h-4 text-emerald"></i>
-              </div>
-              <div class="font-mono text-5xl font-bold text-ivory mb-2 flex items-baseline">
-                <span class="counter" data-target="17">0</span>
-                <span class="text-sand text-2xl ml-1">/ 17</span>
-              </div>
-              <h4 class="font-serif text-lg text-ivory mb-2">Sustainable Goals At Risk</h4>
-              <p class="font-sans text-xs text-muted leading-relaxed font-light">
-                Unchecked deployment destabilizes targets across Good Health (SDG 3), Resilient Infrastructure (SDG 9), Climate Action (SDG 13), and Peace & Justice (SDG 16).
-              </p>
-            </div>
-            <div class="mt-6 pt-3 border-t border-border/40 font-mono text-[10px] text-sand">
-              Source: UN SDG Sustainability Framework
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Deep Dive: Real Health & Human Impact Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          
-          <!-- Physical & Environmental Health -->
-          <div class="p-8 rounded-xl bg-surface/40 border border-border/60">
-            <div class="flex items-center gap-3 mb-4">
-              <i data-lucide="droplets" class="w-5 h-5 text-sand"></i>
-              <h3 class="font-serif text-xl text-ivory">Environmental Health & Aquifers</h3>
-            </div>
-            <p class="font-sans text-sm text-muted leading-relaxed mb-4 font-light">
-              Cooling hyperscale compute racks consumes millions of gallons of drinking water daily from municipal aquifers already stressed by climate drought. In addition, rural communities report continuous low-frequency acoustic noise that disrupts sleep and wildlife.
-            </p>
-            <ul class="font-mono text-xs text-sand/80 space-y-2 border-t border-border/40 pt-4">
-              <li>• Rapid depletion of local groundwater reserves</li>
-              <li>• Grid overload leading to household tariff spikes</li>
-              <li>• Disproportionate burden on rural working-class regions</li>
-            </ul>
-          </div>
-
-          <!-- Mental & Social Wellbeing -->
-          <div class="p-8 rounded-xl bg-surface/40 border border-border/60">
-            <div class="flex items-center gap-3 mb-4">
-              <i data-lucide="heart-pulse" class="w-5 h-5 text-crimson"></i>
-              <h3 class="font-serif text-xl text-ivory">Mental Health & Dislocation</h3>
-            </div>
-            <p class="font-sans text-sm text-muted leading-relaxed mb-4 font-light">
-              The precipitous rollout of cognitive automation triggers severe psychological stress and anxiety across creative, analytical, and junior labor forces. Young graduates face unprecedented uncertainty about whether careers they trained for will exist upon graduation.
-            </p>
-            <ul class="font-mono text-xs text-sand/80 space-y-2 border-t border-border/40 pt-4">
-              <li>• Documented anxiety spikes in student demographics</li>
-              <li>• Sudden displacement in marketing, support & coding</li>
-              <li>• Erosion of human agency and purpose</li>
-            </ul>
-          </div>
-
-          <!-- Institutional Erosion & Lobbying -->
-          <div class="p-8 rounded-xl bg-surface/40 border border-border/60">
-            <div class="flex items-center gap-3 mb-4">
-              <i data-lucide="landmark" class="w-5 h-5 text-amber"></i>
-              <h3 class="font-serif text-xl text-ivory">Lobbying & State Capture</h3>
-            </div>
-            <p class="font-sans text-sm text-muted leading-relaxed mb-4 font-light">
-              Frontier tech companies spent record millions on lobbying in recent quarters. In December 2025, executive decrees actively restricted individual US states from enacting their own localized AI safety standards, centralizing absolute authority in federal hands.
-            </p>
-            <ul class="font-mono text-xs text-sand/80 space-y-2 border-t border-border/40 pt-4">
-              <li>• Preemption of democratic state-level bills</li>
-              <li>• Massive campaign donations to regulatory committees</li>
-              <li>• Closed-door self-regulatory promises without audits</li>
-            </ul>
-          </div>
-
-        </div>
-
+    <!-- 16. REFERENCES -->
+    <section class="panel cream references-section">
+      <div class="content narrow">
+        <p class="section-label">References</p>
+        <ol class="reference-list">
+          <li>Australian Broadcasting Corporation (ABC) (2026) <em>Young people against the unconstrained use of artificial intelligence: Your Say</em>. Available at: abc.net.au [Accessed 18 Nov 2026].</li>
+          <li>CNBC (2026) <em>OpenAI and Anthropic escalate lobbying expenditures in Q2 2026</em>. Available at: cnbc.com [Accessed 18 Nov 2026].</li>
+          <li>Harvard University Gazette (2026) <em>Why communities are pushing back against data centres</em>. Available at: news.harvard.edu [Accessed 18 Nov 2026].</li>
+          <li>International Energy Agency (2024) <em>Electricity 2024: Analysis and Forecast to 2030</em>. Paris: OECD/IEA.</li>
+          <li>Stanford University HAI (2026) <em>The 2026 AI Index Report</em>. Stanford, CA: Stanford University.</li>
+          <li>The White House (2025) <em>Presidential Executive Order: Eliminating State Law Obstruction of National AI Policy</em>. Washington, DC.</li>
+          <li>United Nations (2015–2026) <em>Sustainable Development Goals 3, 9, 13 and 16</em>. New York: UN DESA.</li>
+          <li>AI 2027 Consortium (2027) <em>AI 2027: Frontier Risk Analysis</em>. Research Working Paper.</li>
+        </ol>
       </div>
     </section>
 
-    <!-- SECTION 3: THE PERSPECTIVES BATTLEFIELD -->
-    <section id="perspectives" class="py-28 border-b border-border/40 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="max-w-2xl mb-16">
-          <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">03 / Divergent Stakes</span>
-          <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory mb-4">Who Wins, and Who Pays?</h2>
-          <p class="font-sans text-sm text-muted font-light leading-relaxed">
-            The artificial intelligence race is not a neutral scientific inevitability. It is shaped by conflicting incentives, concentrated wealth, and disenfranchised populations.
-          </p>
-        </div>
-
-        <!-- Interactive Perspective Tabs -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          <!-- Tab Buttons List -->
-          <div class="lg:col-span-4 flex flex-col gap-3" id="perspective-tabs">
-            <button class="perspective-btn active text-left p-5 rounded-xl border border-border/60 transition-all" data-tab="youth">
-              <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-[10px] text-crimson uppercase tracking-wider">Stakeholder 01</span>
-                <i data-lucide="users" class="w-4 h-4 text-crimson"></i>
-              </div>
-              <h4 class="font-serif text-lg text-ivory">Young People</h4>
-              <p class="font-sans text-xs text-muted font-light line-clamp-1">Demanding a planet and society they can thrive in.</p>
-            </button>
-
-            <button class="perspective-btn text-left p-5 rounded-xl border border-border/60 transition-all" data-tab="community">
-              <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-[10px] text-sand uppercase tracking-wider">Stakeholder 02</span>
-                <i data-lucide="home" class="w-4 h-4 text-sand"></i>
-              </div>
-              <h4 class="font-serif text-lg text-ivory">Local Communities</h4>
-              <p class="font-sans text-xs text-muted font-light line-clamp-1">Resisting data centre noise, power bills and pollution.</p>
-            </button>
-
-            <button class="perspective-btn text-left p-5 rounded-xl border border-border/60 transition-all" data-tab="government">
-              <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-[10px] text-muted uppercase tracking-wider">Stakeholder 03</span>
-                <i data-lucide="landmark" class="w-4 h-4 text-muted"></i>
-              </div>
-              <h4 class="font-serif text-lg text-ivory">Governments & Leaders</h4>
-              <p class="font-sans text-xs text-muted font-light line-clamp-1">Caught between sovereign arms races and corporate lobbying.</p>
-            </button>
-
-            <button class="perspective-btn text-left p-5 rounded-xl border border-border/60 transition-all" data-tab="corporations">
-              <div class="flex items-center justify-between mb-1">
-                <span class="font-mono text-[10px] text-muted uppercase tracking-wider">Stakeholder 04</span>
-                <i data-lucide="building-2" class="w-4 h-4 text-muted"></i>
-              </div>
-              <h4 class="font-serif text-lg text-ivory">Frontier Tech Labs</h4>
-              <p class="font-sans text-xs text-muted font-light line-clamp-1">Chasing multi-trillion valuations and market dominance.</p>
-            </button>
-          </div>
-
-          <!-- Dynamic Perspective Content Display -->
-          <div class="lg:col-span-8 p-8 sm:p-12 rounded-2xl bg-surface border border-border/80 min-h-[420px] flex flex-col justify-between relative" id="perspective-content-panel">
-            
-            <div id="perspective-body">
-              <!-- Content injected dynamically via JS based on active tab -->
-            </div>
-
-            <div class="pt-6 border-t border-border/40 flex flex-wrap items-center justify-between gap-4 font-mono text-xs text-muted" id="perspective-source-footer">
-              <!-- Source note injected via JS -->
-            </div>
-
-          </div>
-
-        </div>
-
+    <!-- FOOTER -->
+    <footer class="panel dark footer-panel">
+      <div class="content">
+        <p class="footer-text">Consider the Future — A campaign by Oscar Zhou</p>
+        <p class="footer-sub">"Our future isn't yours to risk."</p>
       </div>
-    </section>
-
-    <!-- SECTION 4: ADVOCACY SPOTLIGHT & MOVEMENTS -->
-    <section class="py-28 border-b border-border/40 bg-surface/10 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-          <div>
-            <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">04 / Tactical Case Study</span>
-            <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory">Grassroots Precedents</h2>
-          </div>
-          <p class="font-sans text-sm text-muted max-w-md font-light">
-            Examining how modern advocates cut through corporate PR with clarity, sharp humor, and digital activism.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          
-          <!-- Spotlight Case Study Card -->
-          <div class="lg:col-span-7 p-8 sm:p-12 rounded-2xl bg-surface border border-border/80 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center gap-3 mb-6">
-                <span class="px-3 py-1 rounded bg-crimson/10 border border-crimson/30 font-mono text-xs text-crimson uppercase">
-                  Featured Case Study
-                </span>
-                <span class="font-mono text-xs text-muted">Public Advocacy & Youth Engagement</span>
-              </div>
-              
-              <h3 class="font-serif text-3xl text-ivory mb-4">The Siliconversations Paradigm</h3>
-              
-              <p class="font-sans text-muted font-light leading-relaxed mb-6">
-                Advocacy groups like <strong class="text-ivory font-medium">Siliconversations</strong> have pioneered a vital new model for technology campaigning: refusing dry technical jargon and instead mobilizing public attention through sharp satire, approachable media, and unrelenting focus on human-aligned futures.
-              </p>
-
-              <div class="space-y-4 mb-8">
-                <div class="flex items-start gap-3">
-                  <i data-lucide="check-circle" class="w-5 h-5 text-crimson shrink-0 mt-0.5"></i>
-                  <p class="font-sans text-sm text-sand/90">
-                    <strong>Demystifying the Mystique:</strong> Stripping away the tech industry’s aura of inevitability and exposing commercial incentives behind rushed deployments.
-                  </p>
-                </div>
-                <div class="flex items-start gap-3">
-                  <i data-lucide="check-circle" class="w-5 h-5 text-crimson shrink-0 mt-0.5"></i>
-                  <p class="font-sans text-sm text-sand/90">
-                    <strong>Coalition Power:</strong> Working in concert with mission-driven watchdogs such as <em>ControlAI</em> and the <em>Future of Life Institute</em> to back viral reach with rigorous research.
-                  </p>
-                </div>
-                <div class="flex items-start gap-3">
-                  <i data-lucide="check-circle" class="w-5 h-5 text-crimson shrink-0 mt-0.5"></i>
-                  <p class="font-sans text-sm text-sand/90">
-                    <strong>Resilience Against Setbacks:</strong> Mobilizing resistance when regressive policies—such as federal preemption of state-level oversight—threaten local democratic recourse.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-xl bg-surface/60 border border-border/40 font-mono text-xs text-muted">
-              <span class="text-sand font-semibold">Key Lesson for Oscar Zhou’s Campaign:</span> “Publicity is leverage. When ordinary citizens and youth understand the existential stakes, political representatives cannot quietly prioritize corporate donations.”
-            </div>
-          </div>
-
-          <!-- Allied Coalition Grid -->
-          <div class="lg:col-span-5 flex flex-col gap-4">
-            
-            <div class="p-6 rounded-xl bg-surface/30 border border-border/60">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-serif text-lg text-ivory">ControlAI</h4>
-                <span class="font-mono text-[10px] text-muted uppercase">Global Watchdog</span>
-              </div>
-              <p class="font-sans text-xs text-muted font-light leading-relaxed">
-                Dedicated to legally binding human control mechanisms and mandatory independent licensing before high-compute models are trained.
-              </p>
-            </div>
-
-            <div class="p-6 rounded-xl bg-surface/30 border border-border/60">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-serif text-lg text-ivory">Future of Life Institute (FLI)</h4>
-                <span class="font-mono text-[10px] text-muted uppercase">Civilizational Risk</span>
-              </div>
-              <p class="font-sans text-xs text-muted font-light leading-relaxed">
-                Pioneering research into catastrophic AI trajectories, autonomous weapon treaties, and intergenerational human rights.
-              </p>
-            </div>
-
-            <div class="p-6 rounded-xl bg-surface/30 border border-border/60">
-              <div class="flex items-center justify-between mb-2">
-                <h4 class="font-serif text-lg text-ivory">Youth Climate & AI Nexus</h4>
-                <span class="font-mono text-[10px] text-muted uppercase">Ecology Coalition</span>
-              </div>
-              <p class="font-sans text-xs text-muted font-light leading-relaxed">
-                Connecting energy justice to computational ethics. Demanding that renewables power public hospitals and transit before commercial server farms.
-              </p>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 5: THE THREE-LEVEL ACTION BLUEPRINT -->
-    <section id="solutions" class="py-28 border-b border-border/40 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="max-w-2xl mb-16">
-          <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">05 / The Action Framework</span>
-          <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory mb-4">Intervention at Three Scales</h2>
-          <p class="font-sans text-sm text-muted font-light leading-relaxed">
-            Meaningful transformation requires simultaneous pressure across individual habits, municipal organizing, and international diplomacy.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Level 1: Personal -->
-          <div class="p-8 rounded-2xl bg-surface border border-border/80 flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-sand/10 border border-sand/30 flex items-center justify-center text-sand mb-6 font-mono text-base font-bold">
-                01
-              </div>
-              <span class="font-mono text-[11px] text-muted uppercase tracking-wider block mb-2">Scale: Personal</span>
-              <h3 class="font-serif text-2xl text-ivory mb-4">Break the Digital Silence</h3>
-              <p class="font-sans text-sm text-muted font-light leading-relaxed mb-6">
-                Most people only experience AI through marketing hype and productivity novelties. They do not realize the social, environmental, and existential risks currently unfolding.
-              </p>
-              
-              <ul class="space-y-3 font-sans text-xs text-sand/90">
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Initiate discussions in classrooms, workplaces, and families.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Sign and distribute youth advocacy petitions across social media.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Reject the fatalistic myth that unchecked acceleration is inevitable.</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[10px] text-muted">
-              Why it works: Cultural consensus is the prerequisite for political action.
-            </div>
-          </div>
-
-          <!-- Level 2: Community -->
-          <div class="p-8 rounded-2xl bg-surface border border-border/80 flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-crimson/10 border border-crimson/30 flex items-center justify-center text-crimson mb-6 font-mono text-base font-bold">
-                02
-              </div>
-              <span class="font-mono text-[11px] text-muted uppercase tracking-wider block mb-2">Scale: Community</span>
-              <h3 class="font-serif text-2xl text-ivory mb-4">Demand Local Oversight</h3>
-              <p class="font-sans text-sm text-muted font-light leading-relaxed mb-6">
-                Data centers are built in specific physical towns. Local governments have zoning power, water extraction permits, and environmental disclosure mandates.
-              </p>
-              
-              <ul class="space-y-3 font-sans text-xs text-sand/90">
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Question municipal council members about tax breaks granted to server farms.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Demand independent audits on municipal water aquifer depletion.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Vote for local representatives who pledge to reject corporate AI PAC funds.</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[10px] text-muted">
-              Why it works: Direct grassroots resistance makes unregulated expansion politically costly.
-            </div>
-          </div>
-
-          <!-- Level 3: Global / Systemic -->
-          <div class="p-8 rounded-2xl bg-surface border border-border/80 flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-amber/10 border border-amber/30 flex items-center justify-center text-amber mb-6 font-mono text-base font-bold">
-                03
-              </div>
-              <span class="font-mono text-[11px] text-muted uppercase tracking-wider block mb-2">Scale: Global & Systemic</span>
-              <h3 class="font-serif text-2xl text-ivory mb-4">Independent Global Audit</h3>
-              <p class="font-sans text-sm text-muted font-light leading-relaxed mb-6">
-                Just as nuclear technology and biological agents are governed by international non-proliferation treaties, frontier computational intelligence requires global oversight.
-              </p>
-              
-              <ul class="space-y-3 font-sans text-xs text-sand/90">
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>An independent multinational treaty body with inspection powers.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Mandatory safety pre-registration before training runs exceed compute thresholds.</span>
-                </li>
-                <li class="flex items-start gap-2">
-                  <i data-lucide="check" class="w-4 h-4 text-crimson shrink-0"></i>
-                  <span>Protection and international asylum protocols for AI safety whistleblowers.</span>
-                </li>
-              </ul>
-            </div>
-            
-            <div class="mt-8 pt-4 border-t border-border/40 font-mono text-[10px] text-muted">
-              Why it works: Eliminates the prisoner’s dilemma driving unsafe corporate competition.
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 6: INTERACTIVE ACTION HUB & YOUTH PLEDGE -->
-    <section id="take-action" class="py-28 border-b border-border/40 bg-surface/30 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          
-          <!-- Left: Call to Action Explanation -->
-          <div class="lg:col-span-5 flex flex-col justify-between">
-            <div>
-              <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">06 / Take Action</span>
-              <h2 class="font-serif text-4xl sm:text-5xl font-normal text-ivory mb-6">
-                Demand a Future <br />
-                <span class="italic text-sand">We Can Survive In.</span>
-              </h2>
-              <p class="font-sans text-muted font-light leading-relaxed mb-6">
-                We refuse to accept a future where human agency, public health, and ecological stability are sacrificed at the altar of speculative artificial intelligence.
-              </p>
-              <p class="font-sans text-sm text-muted font-light leading-relaxed mb-8">
-                By adding your voice to Oscar Zhou’s <strong class="text-ivory font-medium">Consider the Future</strong> campaign, you are formally sending an open declaration to legislators, frontier labs, and community councils demanding binding safety standards and resource caps.
-              </p>
-            </div>
-
-            <!-- Ticker Stats -->
-            <div class="p-6 rounded-xl bg-surface border border-border/80">
-              <div class="flex items-center justify-between mb-2">
-                <span class="font-mono text-xs uppercase text-sand">Global Youth Signatures</span>
-                <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-crimson/10 font-mono text-[10px] text-crimson">
-                  <span class="w-1.5 h-1.5 rounded-full bg-crimson animate-ping"></span> Live
-                </span>
-              </div>
-              <div class="font-mono text-3xl font-bold text-ivory" id="pledge-count-display">
-                14,892
-              </div>
-              <span class="font-mono text-[10px] text-muted">Students, researchers, and citizens in 48 countries.</span>
-            </div>
-          </div>
-
-          <!-- Right: Interactive Youth Letter & Pledge Generator -->
-          <div class="lg:col-span-7 p-8 sm:p-10 rounded-2xl bg-surface border border-border/80 shadow-2xl">
-            <h3 class="font-serif text-2xl text-ivory mb-2">Sign the Youth Declaration</h3>
-            <p class="font-sans text-xs text-muted font-light mb-6">Generate your personalized demand letter and add your signature to the public registry.</p>
-
-            <form id="action-form" class="space-y-4">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label for="user-name" class="block font-mono text-[11px] uppercase text-muted mb-1">Your Full Name</label>
-                  <input type="text" id="user-name" required placeholder="e.g. Alex Rivera" class="w-full bg-noir border border-border/80 rounded-lg px-4 py-2.5 text-sm text-ivory focus:border-crimson focus:outline-none transition-colors" />
-                </div>
-                <div>
-                  <label for="user-role" class="block font-mono text-[11px] uppercase text-muted mb-1">Your Demographic / Role</label>
-                  <select id="user-role" class="w-full bg-noir border border-border/80 rounded-lg px-4 py-2.5 text-sm text-ivory focus:border-crimson focus:outline-none transition-colors">
-                    <option value="Youth / Student">Youth / Secondary Student</option>
-                    <option value="University Scholar">University Student / Researcher</option>
-                    <option value="Concerned Citizen">Concerned Community Citizen</option>
-                    <option value="Educator">Educator / Academic</option>
-                    <option value="Technologist">Technologist / Engineer</option>
-                  </select>
-                </div>
-              </div>
-
-              <div>
-                <label for="user-region" class="block font-mono text-[11px] uppercase text-muted mb-1">City & Country</label>
-                <input type="text" id="user-region" required placeholder="e.g. Melbourne, Australia" class="w-full bg-noir border border-border/80 rounded-lg px-4 py-2.5 text-sm text-ivory focus:border-crimson focus:outline-none transition-colors" />
-              </div>
-
-              <!-- Live Letter Preview Box -->
-              <div>
-                <div class="flex items-center justify-between mb-1">
-                  <label class="block font-mono text-[11px] uppercase text-sand">Live Declaration Preview</label>
-                  <span class="font-mono text-[10px] text-muted">Auto-updates as you type</span>
-                </div>
-                <div class="p-4 rounded-lg bg-noir/80 border border-border/60 font-mono text-xs text-muted leading-relaxed max-h-48 overflow-y-auto" id="letter-preview">
-                  “I, <span id="preview-name" class="text-ivory underline decoration-crimson font-semibold">a concerned citizen</span> (<span id="preview-role" class="text-sand">Youth / Student</span>, <span id="preview-region" class="text-sand">Worldwide</span>), stand with Oscar Zhou’s ‘Consider the Future’ advocacy initiative. We demand: (1) mandatory third-party safety audits on frontier AI models before deployment; (2) full public disclosure of municipal water and grid consumption by hyperscale data centers; and (3) an immediate stop to federal preemption of community protections. Our future isn’t yours to risk.”
-                </div>
-              </div>
-
-              <div class="pt-2 flex flex-col sm:flex-row gap-3">
-                <button type="submit" class="btn-primary flex-1 justify-center py-3 text-xs uppercase tracking-wider font-mono">
-                  Sign Declaration & Pledge
-                  <i data-lucide="send" class="w-3.5 h-3.5 inline-block ml-1"></i>
-                </button>
-                <button type="button" id="copy-letter-btn" class="btn-secondary justify-center py-3 text-xs uppercase tracking-wider font-mono">
-                  Copy Letter Text
-                  <i data-lucide="copy" class="w-3.5 h-3.5 inline-block ml-1"></i>
-                </button>
-              </div>
-
-              <div id="form-toast" class="hidden p-3 rounded-lg bg-emerald/10 border border-emerald/30 font-mono text-xs text-emerald text-center">
-                ✓ Thank you. Your signature has been recorded in the campaign ledger.
-              </div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SECTION 7: HARVARD STYLE EVIDENCE & ACADEMIC SOURCES -->
-    <section id="sources" class="py-24 border-b border-border/40 relative">
-      <div class="max-w-7xl mx-auto px-6">
-        
-        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-12 gap-4">
-          <div>
-            <span class="font-mono text-xs text-crimson tracking-widest uppercase block mb-2">07 / Evidence Ledger</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-normal text-ivory">References & Academic Sources</h2>
-          </div>
-          <span class="font-mono text-xs text-sand">Harvard Referencing Standard</span>
-        </div>
-
-        <div class="p-8 sm:p-10 rounded-2xl bg-surface/40 border border-border/60">
-          <p class="font-sans text-xs text-muted font-light mb-8 max-w-2xl leading-relaxed">
-            Every statistic, perspective, and regulatory precedent cited in this campaign is grounded in verified, peer-reviewed, or institutional primary sources. We reject synthetic disinformation and uphold rigorous investigative standards.
-          </p>
-
-          <ol class="space-y-4 font-mono text-xs text-muted leading-relaxed list-decimal list-inside">
-            <li class="pl-2">
-              <span class="text-ivory font-medium">Australian Broadcasting Corporation (ABC)</span> (2026) <em>Young people against the unconstrained use of artificial intelligence: Your Say</em>. Available at: <a href="https://www.abc.net.au" target="_blank" rel="noopener" class="text-sand underline hover:text-ivory">https://www.abc.net.au/news</a> [Accessed 18 November 2026].
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">CNBC Technology</span> (2026) <em>OpenAI and Anthropic escalate lobbying expenditures in Q2 2026 amidst regulatory scrutiny</em>. Available at: <a href="https://www.cnbc.com" target="_blank" rel="noopener" class="text-sand underline hover:text-ivory">https://www.cnbc.com</a> [Accessed 18 November 2026].
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">ControlAI & Future of Life Institute</span> (2025) <em>Safeguarding Human Agency in the Era of Frontier Autonomous Systems</em>. Research Working Paper Series. Cambridge, MA: FLI Press.
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">Harvard University Gazette</span> (2026) <em>Why local communities are pushing back against hyperscale data centers</em>. Available at: <a href="https://news.harvard.edu/gazette" target="_blank" rel="noopener" class="text-sand underline hover:text-ivory">https://news.harvard.edu/gazette</a> [Accessed 18 November 2026].
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">International Energy Agency (IEA)</span> (2024) <em>Electricity 2024: Analysis and Forecast to 2026 and 2030</em>. Paris: OECD/IEA Publications.
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">International Medical Corps</span> (2025) <em>Global Hunger Crisis and Sustainable Development Nexus</em>. Washington, DC: IMC.
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">Stanford University Institute for Human-Centered AI (HAI)</span> (2026) <em>The 2026 AI Index Report: AI Incident Database Trends & Safety Metrics</em>. Stanford, CA: Stanford University.
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">The White House</span> (2025) <em>Presidential Executive Order: Eliminating State Law Obstruction of National Artificial Intelligence Policy</em>. Washington, DC: Office of the Press Secretary.
-            </li>
-            <li class="pl-2">
-              <span class="text-ivory font-medium">United Nations</span> (2015–2026) <em>The 17 Sustainable Development Goals (SDGs) for 2030: Target 3, 9, 13, and 16</em>. New York: United Nations Department of Economic and Social Affairs.
-            </li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
+    </footer>
 
   </main>
-
-  <!-- FOOTER -->
-  <footer class="py-16 bg-noir relative border-t border-border/40">
-    <div class="max-w-7xl mx-auto px-6">
-      
-      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 mb-12">
-        <div>
-          <div class="flex items-center gap-2 mb-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-crimson"></span>
-            <span class="font-serif text-xl font-normal text-ivory tracking-tight">CONSIDER THE FUTURE</span>
-          </div>
-          <p class="font-sans text-xs text-muted max-w-md font-light">
-            An independent, youth-driven global health and technology advocacy campaign founded and maintained by <span class="text-sand font-medium">Oscar Zhou</span>.
-          </p>
-        </div>
-
-        <div class="flex items-center gap-6 font-mono text-xs text-muted">
-          <a href="#hero" class="hover:text-ivory transition-colors">Back to Top ↑</a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="hover:text-ivory transition-colors">GitHub Repository</a>
-          <a href="#take-action" class="text-crimson hover:underline">Sign Petition</a>
-        </div>
-      </div>
-
-      <div class="border-t border-border/40 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-muted/70">
-        <p>“Our future isn’t yours to risk.” • Slogan & Framework by Oscar Zhou.</p>
-        <p>Built with intentional human craftsmanship. Open for public educational advocacy.</p>
-      </div>
-
-    </div>
-  </footer>
 
   <script type="module" src="./src/main.js"></script>
 </body>
