@@ -21,8 +21,8 @@
     href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
-  <script type="module" crossorigin src="./assets/index-BnwyEEZu.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-ChjaeoNs.css">
+  <script type="module" crossorigin src="./assets/index-DEr6lvKL.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DFCxDsJG.css">
 </head>
 
 <body>
@@ -117,6 +117,50 @@
           Projected electricity consumed by AI data centres by 2030.<br>
           <span class="stat-source">More than the entire national power demand of Japan.</span>
         </p>
+
+        <!-- Energy Comparison Chart -->
+        <div class="energy-comparison-chart">
+          <div class="comp-bar-row highlight">
+            <div class="comp-bar-label">
+              <span class="entity-name">AI Data Centres (2030)</span>
+              <span class="entity-val">945 TWh</span>
+            </div>
+            <div class="comp-bar-track">
+              <div class="comp-bar-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+
+          <div class="comp-bar-row">
+            <div class="comp-bar-label">
+              <span class="entity-name">Japan (Entire Nation)</span>
+              <span class="entity-val">930 TWh</span>
+            </div>
+            <div class="comp-bar-track">
+              <div class="comp-bar-fill" style="width: 98%;"></div>
+            </div>
+          </div>
+
+          <div class="comp-bar-row">
+            <div class="comp-bar-label">
+              <span class="entity-name">United Kingdom</span>
+              <span class="entity-val">290 TWh</span>
+            </div>
+            <div class="comp-bar-track">
+              <div class="comp-bar-fill" style="width: 31%;"></div>
+            </div>
+          </div>
+
+          <div class="comp-bar-row">
+            <div class="comp-bar-label">
+              <span class="entity-name">Australia</span>
+              <span class="entity-val">240 TWh</span>
+            </div>
+            <div class="comp-bar-track">
+              <div class="comp-bar-fill" style="width: 25%;"></div>
+            </div>
+          </div>
+        </div>
+
         <p class="source-line">International Energy Agency, 2024</p>
       </div>
     </section>
@@ -130,6 +174,53 @@
           <span class="stat-source">Up 55% from 233 in 2024. Cases where AI systems caused or contributed to
             harm.</span>
         </p>
+
+        <!-- Incident Surge Chart -->
+        <div class="incident-chart-wrap">
+          <div class="surge-badge">
+            <span class="pulse-dot"></span>
+            +55% Annual Surge
+          </div>
+          <svg class="incident-svg" viewBox="0 0 340 110" preserveAspectRatio="none">
+            <!-- Grid lines -->
+            <line x1="30" y1="90" x2="310" y2="90" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+            <line x1="30" y1="55" x2="310" y2="55" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3,3" stroke-width="1" />
+            <line x1="30" y1="20" x2="310" y2="20" stroke="rgba(255,255,255,0.06)" stroke-dasharray="3,3" stroke-width="1" />
+            
+            <!-- Area fill -->
+            <path d="M 50 90 L 50 78 L 170 54 L 290 18 L 290 90 Z" fill="url(#crimsonGrad)" opacity="0.35" />
+            
+            <!-- Line -->
+            <path d="M 50 78 L 170 54 L 290 18" fill="none" stroke="#d63a2e" stroke-width="2.5" stroke-linecap="round" />
+            
+            <!-- Points -->
+            <circle cx="50" cy="78" r="4.5" fill="#fff" />
+            <circle cx="170" cy="54" r="4.5" fill="#fff" />
+            <circle cx="290" cy="18" r="6" fill="#d63a2e" stroke="#fff" stroke-width="2" />
+
+            <defs>
+              <linearGradient id="crimsonGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#d63a2e" stop-opacity="0.6"/>
+                <stop offset="100%" stop-color="#d63a2e" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="chart-labels">
+            <div class="chart-point">
+              <span class="yr">2023</span>
+              <span class="val">~150</span>
+            </div>
+            <div class="chart-point">
+              <span class="yr">2024</span>
+              <span class="val">233</span>
+            </div>
+            <div class="chart-point active">
+              <span class="yr">2025</span>
+              <span class="val">362</span>
+            </div>
+          </div>
+        </div>
+
         <p class="source-line">Stanford University AI Index Report, 2026</p>
       </div>
     </section>
@@ -142,6 +233,34 @@
           Researchers warn that unconstrained AI development without safety guarantees could risk civilisational tipping
           points within years — not decades.
         </p>
+
+        <!-- Timeline Graphic -->
+        <div class="timeline-graphic">
+          <div class="timeline-bar-track">
+            <div class="timeline-bar-fill"></div>
+          </div>
+          <div class="timeline-nodes">
+            <div class="timeline-node past">
+              <span class="node-marker"></span>
+              <span class="node-year">2024</span>
+              <span class="node-title">Frontier LLMs</span>
+              <span class="node-sub">Compute scaling race</span>
+            </div>
+            <div class="timeline-node mid">
+              <span class="node-marker"></span>
+              <span class="node-year">2027</span>
+              <span class="node-title">‘AI 2027’ Paper</span>
+              <span class="node-sub">Recursive acceleration</span>
+            </div>
+            <div class="timeline-node critical">
+              <span class="node-marker"></span>
+              <span class="node-year">2030</span>
+              <span class="node-title">Risk Horizon</span>
+              <span class="node-sub">Containment limit</span>
+            </div>
+          </div>
+        </div>
+
         <p class="source-line">AI 2027, Frontier Research Paper</p>
       </div>
     </section>
@@ -175,9 +294,62 @@
       <div class="content">
         <p class="stat-number">4 SDGs</p>
         <p class="stat-caption">
-          Good Health &amp; Well-being&ensp;·&ensp;Industry &amp; Infrastructure<br>
-          Climate Action&ensp;·&ensp;Peace, Justice &amp; Strong Institutions
+          United Nations Sustainable Development Goals directly undermined by unconstrained AI development.
         </p>
+
+        <!-- SDG Graphic Grid -->
+        <div class="sdg-graphic-grid">
+          <div class="sdg-card">
+            <div class="sdg-badge">GOAL 03</div>
+            <div class="sdg-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="sdg-svg">
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                <path d="M12 7v4l2.5 2" />
+              </svg>
+            </div>
+            <h4 class="sdg-title">Good Health &amp; Well-Being</h4>
+            <p class="sdg-desc">Psychological stress, workforce disruption, and community aquifer depletion.</p>
+          </div>
+
+          <div class="sdg-card">
+            <div class="sdg-badge">GOAL 09</div>
+            <div class="sdg-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="sdg-svg">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                <path d="M10 6.5h4M17.5 10v4M6.5 10v7.5a1 1 0 0 0 1 1H14" />
+              </svg>
+            </div>
+            <h4 class="sdg-title">Industry &amp; Infrastructure</h4>
+            <p class="sdg-desc">Straining regional electrical grids and concentrating compute power in private hands.</p>
+          </div>
+
+          <div class="sdg-card">
+            <div class="sdg-badge">GOAL 13</div>
+            <div class="sdg-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="sdg-svg">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M3.6 9h16.8M3.6 15h16.8" />
+                <path d="M11.5 3a17 17 0 0 0 0 18M12.5 3a17 17 0 0 1 0 18" />
+              </svg>
+            </div>
+            <h4 class="sdg-title">Climate Action</h4>
+            <p class="sdg-desc">945 TWh projected data center consumption and massive cooling emissions.</p>
+          </div>
+
+          <div class="sdg-card">
+            <div class="sdg-badge">GOAL 16</div>
+            <div class="sdg-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="sdg-svg">
+                <path d="M12 3v18M5 7l7-3 7 3M4 14l3-7 3 7M4 14a3 3 0 0 0 6 0M14 14l3-7 3 7M14 14a3 3 0 0 0 6 0" />
+              </svg>
+            </div>
+            <h4 class="sdg-title">Peace &amp; Justice</h4>
+            <p class="sdg-desc">Multimillion-dollar corporate lobbying overriding democratic state protections.</p>
+          </div>
+        </div>
+
         <p class="source-line">United Nations Sustainable Development Goals 3, 9, 13, 16</p>
       </div>
     </section>
@@ -229,7 +401,61 @@
           <strong>ControlAI</strong> and the <strong>Future of Life Institute</strong>, they back viral reach with
           rigorous research.
         </p>
-        <p class="body-text" style="margin-top: 1.5rem;">
+
+        <!-- Ally Movement Cards Grid -->
+        <div class="ally-cards-grid">
+          <a href="https://www.youtube.com/@Siliconversations" target="_blank" rel="noopener" class="ally-card">
+            <div class="ally-icon-box">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="ally-icon">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </div>
+            <div class="ally-info">
+              <span class="ally-name">Siliconversations</span>
+              <span class="ally-role">Youth Media &amp; Satire</span>
+            </div>
+          </a>
+
+          <a href="https://controlai.org/" target="_blank" rel="noopener" class="ally-card">
+            <div class="ally-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ally-icon">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+              </svg>
+            </div>
+            <div class="ally-info">
+              <span class="ally-name">ControlAI</span>
+              <span class="ally-role">Frontier Policy &amp; Auditing</span>
+            </div>
+          </a>
+
+          <a href="https://futureoflife.org/" target="_blank" rel="noopener" class="ally-card">
+            <div class="ally-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ally-icon">
+                <path d="M5 22h14M5 2h14M17 2a5 5 0 0 0-5 5v2a5 5 0 0 0-5-5M17 22a5 5 0 0 1-5-5v-2a5 5 0 0 1-5 5"/>
+              </svg>
+            </div>
+            <div class="ally-info">
+              <span class="ally-name">Future of Life Institute</span>
+              <span class="ally-role">Catastrophic Risk Research</span>
+            </div>
+          </a>
+
+          <a href="https://safe.ai/" target="_blank" rel="noopener" class="ally-card">
+            <div class="ally-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ally-icon">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="ally-info">
+              <span class="ally-name">Center for AI Safety</span>
+              <span class="ally-role">Technical Alignment</span>
+            </div>
+          </a>
+        </div>
+
+        <p class="body-text" style="margin-top: 2rem;">
           Their lesson is clear: when ordinary citizens understand the stakes, political representatives can no longer
           quietly prioritise corporate donations.
         </p>
@@ -240,24 +466,57 @@
     <section class="panel crimson">
       <div class="content">
         <h2 class="medium-heading" style="color: #fff;">Add your voice.</h2>
-        <p class="stat-caption" style="margin-bottom: 3rem;">Sign the petitions. Share the message. Hold them
+        <p class="stat-caption" style="margin-bottom: 2.5rem;">Sign the petitions. Share the message. Hold them
           accountable.</p>
 
         <div class="links-stack">
           <a href="https://www.youtube.com/@Siliconversations" target="_blank" rel="noopener" class="action-link">
-            Siliconversations — YouTube Campaign&ensp;↗
+            <span class="link-label">
+              <svg class="link-brand-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+              Siliconversations — YouTube Campaign
+            </span>
+            <span class="link-arrow">↗</span>
           </a>
           <a href="https://controlai.org/" target="_blank" rel="noopener" class="action-link">
-            ControlAI — Demand Human Control Over AI&ensp;↗
+            <span class="link-label">
+              <svg class="link-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+              </svg>
+              ControlAI — Demand Human Control Over AI
+            </span>
+            <span class="link-arrow">↗</span>
           </a>
           <a href="https://futureoflife.org/" target="_blank" rel="noopener" class="action-link">
-            Future of Life Institute — Existential Risk Research&ensp;↗
+            <span class="link-label">
+              <svg class="link-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 22h14M5 2h14M17 2a5 5 0 0 0-5 5v2a5 5 0 0 0-5-5M17 22a5 5 0 0 1-5-5v-2a5 5 0 0 1-5 5"/>
+              </svg>
+              Future of Life Institute — Existential Risk Research
+            </span>
+            <span class="link-arrow">↗</span>
           </a>
           <a href="https://safe.ai/" target="_blank" rel="noopener" class="action-link">
-            Center for AI Safety — Statement on AI Risk&ensp;↗
+            <span class="link-label">
+              <svg class="link-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              Center for AI Safety — Statement on AI Risk
+            </span>
+            <span class="link-arrow">↗</span>
           </a>
           <a href="https://aiforgood.itu.int/" target="_blank" rel="noopener" class="action-link">
-            AI for Good — United Nations Platform&ensp;↗
+            <span class="link-label">
+              <svg class="link-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20M12 2a14.5 14.5 0 0 1 0 20M2 12h20"/>
+              </svg>
+              AI for Good — United Nations Platform
+            </span>
+            <span class="link-arrow">↗</span>
           </a>
         </div>
       </div>
