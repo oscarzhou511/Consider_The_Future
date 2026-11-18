@@ -1,0 +1,29 @@
+{
+  "name": "consider_the_future",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Consider the Future - Youth-Led Advocacy Campaign by Oscar Zhou",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:docs": "vite build --outDir docs",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "advocacy",
+    "ai-safety",
+    "youth",
+    "future",
+    "sdgs"
+  ],
+  "author": "Oscar Zhou",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27",
+    "lucide": "^1.75.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  }
+}

@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --noir: #0c0d10;
+    --surface: #14161b;
+    --surface-hover: #1b1e25;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-strong: rgba(255, 255, 255, 0.16);
+    --ivory: #f6f5f1;
+    --sand: #d8cca3;
+    --muted: #9598a3;
+    --crimson: #e84734;
+    --crimson-hover: #d23b29;
+    --amber: #dfa038;
+    --emerald: #2bb673;
+  }
+
+  html {
+    scroll-behavior: initial; /* Lenis handles smooth scrolling */
+    background-color: var(--noir);
+    color: var(--ivory);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    position: relative;
+    background-color: var(--noir);
+    color: var(--ivory);
+  }
+}
+
+/* Typography Utilities */
+.font-serif {
+  font-family: 'Newsreader', Georgia, Cambria, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Color Palette Helper Classes */
+.bg-noir { background-color: var(--noir); }
+.bg-surface { background-color: var(--surface); }
+.text-ivory { color: var(--ivory); }
+.text-sand { color: var(--sand); }
+.text-muted { color: var(--muted); }
+.text-crimson { color: var(--crimson); }
+.text-amber { color: var(--amber); }
+.text-emerald { color: var(--emerald); }
+.border-border { border-color: var(--border); }
+.border-crimson { border-color: var(--crimson); }
+
+/* Film Grain Texture for Authentic Human / Print Broadside Feel */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99;
+  opacity: 0.028;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Minimalist Button Styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--crimson);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px 0 rgba(232, 71, 52, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--crimson-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(232, 71, 52, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--ivory);
+  padding: 0.65rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  border: 1px solid var(--border-strong);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface);
+  border-color: var(--ivory);
+  transform: translateY(-1px);
+}
+
+/* Perspective Interactive Tab Buttons */
+.perspective-btn {
+  background-color: var(--surface);
+  transition: all 0.25s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+.perspective-btn:hover {
+  background-color: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.perspective-btn.active {
+  background-color: var(--surface-hover);
+  border-color: var(--crimson);
+  box-shadow: 0 0 0 1px var(--crimson);
+}
+
+.perspective-btn.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 15%;
+  bottom: 15%;
+  width: 3px;
+  background-color: var(--crimson);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Stat Cards */
+.stat-card {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
+}
+
+/* Lenis Recommended CSS for Smooth Scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
