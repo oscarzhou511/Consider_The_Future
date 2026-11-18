@@ -147,6 +147,18 @@ html.lenis, html.lenis body { height: auto; }
   opacity: 1;
 }
 
+.body-text a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.body-text a:hover {
+  opacity: 1;
+}
+
 .stat-number {
   font-family: 'Newsreader', Georgia, serif;
   font-size: clamp(4rem, 12vw, 10rem);
